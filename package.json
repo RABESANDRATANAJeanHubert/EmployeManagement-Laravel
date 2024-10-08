@@ -30,8 +30,10 @@
         "webpack": "^5.68.0"
     },
     "dependencies": {
-        "@types/bootstrap-datepicker": "0.0.15",
-        "babel-preset-es2015": "^6.24.1",
-        "vue-router": "^3.5.3"
-    }
+    "@types/bootstrap-datepicker": "0.0.15",
+    "babel-preset-es2015": "^6.24.1",
+    "vue": "^3.2.0",
+    "vue-router": "^4.0.0"
+}
+
 }
