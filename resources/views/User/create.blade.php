@@ -42,7 +42,7 @@
                                     <label for="inputAddress2">Sex</label>
                                     <input type="text" class="form-control" name="sex" placeholder="Sexe">
                                   </div>
-                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                <button type="submit" class="btn btn-primary">save</button>
                               </form>
                         </tbody>
                       </table>

@@ -40,6 +40,7 @@
                     </div>
                     <div class="hidden md:ml-6 md:flex">
                         <a href="#employee" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Employees</a>
+                        <a href="#offers" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Offers</a>
                         <a href="#contact" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                     </div>
                 </div>
@@ -174,7 +175,7 @@
                 <img src="/career.jpeg" alt="Offer 1" class="rounded-full w-24 h-24 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2">Career Opportunity</h3>
                 <p class="mb-4">Join our team and grow your career with us. We are always looking for talented professionals!</p>
-                <a href="/careers" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn More</a>
+                <a href="/careers" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn More</a>
             </div>
 
             <!-- Offer 2 -->
@@ -182,7 +183,7 @@
                 <img src="/internship.jpg" alt="Offer 2" class="rounded-full w-24 h-24 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2">Internship Program</h3>
                 <p class="mb-4">Gain hands-on experience by joining our internship program and start your professional journey.</p>
-                <a href="/internships" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn More</a>
+                <a href="/internships" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn More</a>
             </div>
 
             <!-- Offer 3 -->
@@ -190,7 +191,7 @@
                 <img src="/freelance.jpeg" alt="Offer 3" class="rounded-full w-24 h-24 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2">Freelance Opportunities</h3>
                 <p class="mb-4">Work with us on exciting freelance projects and expand your portfolio.</p>
-                <a href="/freelance" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn More</a>
+                <a href="/freelance" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-blue-700">Learn More</a>
             </div>
         </div>
     </div>
@@ -199,7 +200,7 @@
 
     <!-- Footer -->
     <footer class="sticky-footer bg-gray-800 text-white w-full">
-    <div class="container my-auto">
+    <div id="contact" class="container my-auto">
         <div class="flex flex-col md:flex-row justify-between items-start py-6">
             <!-- Company Description -->
             <div class="w-full md:w-1/3 mb-6">

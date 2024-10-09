@@ -7,7 +7,7 @@
         <div class="col-md-9">
             <div class="card">
                 <div class="card-header">
-                    <a href="{{route('employees.index')}}" class="btn btn-success float-right">Employee List</a>
+                    <a href="{{route('employees.index')}}" class="btn btn-info float-right">Employee List</a>
                     {{ _('Dashboard')}}</div>
                 <div class="card-body">
                     @if(session()->has('message'))
@@ -69,7 +69,7 @@
                                             <input name="date_hired" type="date" class="form-control" value="02-16-2012">
                                         </div>
                                     </div>
-                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                <button type="submit" class="btn btn-primary">save</button>
                               </form>
                         </tbody>
                       </table>

@@ -7,7 +7,7 @@
         <div class="col-md-9">
             <div class="card">
                 <div class="card-header">
-                    <a href="{{route('state.index')}}" class="btn btn-success float-right">State List</a>
+                    <a href="{{route('state.index')}}" class="btn btn-info float-right">State List</a>
                     {{ _('Dashboard')}}</div>
                 <div class="card-body">
                     @if(session()->has('message'))
@@ -33,7 +33,7 @@
                                     <label for="inputAddress2">Name</label>
                                     <input type="text" class="form-control" name="name" required placeholder="Please Enter your name">
                                   </div>
-                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                <button type="submit" class="btn btn-primary">save</button>
                               </form>
                         </tbody>
                       </table>

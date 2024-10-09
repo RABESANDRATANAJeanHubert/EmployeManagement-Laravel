@@ -14,7 +14,7 @@
                           </form>
                     </div>
                     <div class="col-md-6">
-                        <a  class = "btn btn-info float-right" href="{{route('state.create')}}">Create new country</a>
+                        <a  class = "btn btn-info float-right" href="{{route('state.create')}}">Create new state</a>
                         {{ _('')}}
                     </div>
                 </div>
