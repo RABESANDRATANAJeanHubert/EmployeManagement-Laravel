@@ -49,23 +49,38 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        $state =  Employee::create([
-            'last_name'=>$request->last_name,
-            'first_name'=>$request->first_name,
-            'middle_name'=>$request->middle_name,
-            'address'=>$request->address,
-            'country_id' => $request->country_id,
-            // 'state_id' => $request->state_id,
-            'city_id' => $request->country_id,
-            'zip_code' => $request->zip_code,
-            'birthday' => $request->birthday,
-            'date_hired' => $request->date_hired
+        // Validate the incoming request
+        $validatedData = $request->validate([
+            'last_name' => 'required|string|max:255',
+            'first_name' => 'required|string|max:255',
+            'middle_name' => 'nullable|string|max:255',
+            'address' => 'required|string|max:255',
+            'country_id' => 'required|integer|exists:countries,id', // Assuming countries table exists
+            'state_id' => 'nullable|integer|exists:states,id', // If needed
+            'city_id' => 'required|integer|exists:cities,id', // Assuming cities table exists
+            'zip_code' => 'required|string|max:20',
+            'birthday' => 'nullable|date',
+            'date_hired' => 'required|date'
         ]);
 
-        dd($state);
+        // Create the Employee record
+        $employee = Employee::create([
+            'last_name' => $validatedData['last_name'],
+            'first_name' => $validatedData['first_name'],
+            'middle_name' => $validatedData['middle_name'],
+            'address' => $validatedData['address'],
+            'country_id' => $validatedData['country_id'],
+            // 'state_id' => $validatedData['state_id'], // Uncomment if needed
+            'city_id' => $validatedData['city_id'],
+            'zip_code' => $validatedData['zip_code'],
+            'birthday' => $validatedData['birthday'],
+            'date_hired' => $validatedData['date_hired']
+        ]);
 
-        // return redirect()->route('employees.index',  compact('state'));
+        session()->flash('success', 'Employee created successfully!');
+        return redirect()->route('employees.index')->with('employee', $employee);
     }
+
 
     /**
      * Display the specified resource.
